@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deshbord</title>
+    <link rel="stylesheet" href="./newwork.css" />
+    <link rel="stylesheet" href="./deshbord.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="./deshbord.html" class="logo">
+          <img src="../images/logo3.jpg"
+        /></a>
+        <div class="search-box">
+          <img src="../images/search.png" alt="" />
+          <input type="text" placeholder="search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="./index.html" class="active-link"
+              ><img src="../images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="my-network-nav"
+              ><img src="../images/network.png" /><span>My Newtwork</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="../images/jobs.png" /><span>Queries</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../images/message.png" /><span>Messagings</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../images/notification.png" /><span
+                >Notification</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="../images/WhatsApp Image 2024-04-26 at 07.32.30_51d6af34.jpg" class="nav-profile-img" />
+        </div>
+      </div>
+    </nav>
+
+    <!--nav bar closed-->
+
+    <div class="container">
+      <!-- ------------left-sidebar---------- -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img class="cover-img" src="../images/cover-pic.png" width="100%" />
+          <div class="sidebar-profile-info">
+            <img id="profile-pic" src="../images/WhatsApp Image 2024-04-26 at 07.32.30_51d6af34.jpg" />
+            <!-- <label for="input-file"><i class="bx bx-plus"></i></label> -->
+            <span class="edit-profile">Edit Profile <i class='bx bxs-edit' ></i></span>
+            <h1 class="user-name">Bappi das</h1>
+            <p>Assam Downtown University</p>
+            <ul>
+              <li>Your profile views <span>2002</span></li>
+              <li>Your post views <span>1230</span></li>
+              <li>Your connections <span>500+</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href=""> <img src="../images/items.png" alt="" />My items</a>
+            <a href=""><img src="../images/premium.png" alt="" />Try Premium</a>
+          </div>
+        </div>
+        <div class="sidebar-activity">
+          <h3>RECENT</h3>
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Web Development</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Projects on ICSAGI</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />UI and UX Desingner</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Hackathon Winner 2024</a
+          >
+          <h3>EXPERIENCE</h3>
+          <a href=""></a>
+          <h3>EDUCATION</h3>
+        </div>
+      </div>
+      <!-- ----------main-content------------ -->
+      <div class="main-content">
+        <div class="invitation">
+          <div class="invitation-content">
+            <img src="../images/user-4.png" alt="Profile Picture" class="profile-pic">
+            <div class="invitation-details">
+              <p class="invitation-type">Newsletter &bull; Daily</p>
+              <p class="invitation-text">Prerna Tyagi invited you to subscribe to Remote Hiring Daily Updates</p>
+            </div>
+          </div>
+          <div class="invitation-actions">
+            <button class="ignore-btn" onclick="ignor();">Ignore</button>
+            <button class="accept-btn" onclick="accept();">Accept</button>
+          </div>
+        </div>
+        
+        <div class="network-users">
+          <div class="user-network-title">
+            <p>People you may know based on your recent activity</p>
+          </div>
+         <div class="profile-card">
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Martha white</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/khagemba.jpg" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Sapamcha Khag</p>
+                  <p class="name-info-card">Professor/frontend developer </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-2.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/binayak.jpg" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">binayak</p>
+                  <p class="name-info-card">UI/UX desinger || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/devbro.jpg" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">dev bro</p>
+                  <p class="name-info-card">Data scientest || singer</p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/ayush.jpg" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Ayush sarkar</p>
+                  <p class="name-info-card">Mentor/Guide || developer </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+            <div class="profile-desing">
+              <div class="crad-part1"></div>
+              <div class="cart-part12-logo"><img src="../images/user-3.png" alt=""></div>
+              <div class="crad-part2">
+                <div class="info-profile-card">
+                  <p class="name-card">Diwakar Kumar</p>
+                  <p class="name-info-card">Professor/Teacher || Mentor/Guide </p>
+                </div>
+                <div class="follow-card-profile"><button><i class='bx bx-user-plus' ></i>  Follow</button></div>
+              </div>
+            </div>
+         </div>
+        </div>
+
+
+      </div>
+      <!-- ------------right-sidebar---------- -->
+      <div class="right-sidebar"></div>
+    </div>
+
+  
+    <script src="./deshbord.js"></script>
+    <script src="./newnetwork.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deshbord</title>
+    <link rel="stylesheet" href="./deshbord.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!-- --------------------------edit profile-------------------->
+    <div class="edit-profile-detais">
+     <div class="profile-photo">
+      
+      <input type="file" accept="image/jpg, image/png, image/jpeg" id="uplode-new-image" style="display: none;">
+      <label for="uplode-new-image"><i class='bx bx-cloud-upload'></i></label>
+      
+     </div>
+     <div class="edit-personal">
+      <div class="name-edit">
+        <p>Name</p>
+        <input class="updated-name" type="text">
+      </div>
+      <div class="univer-edit">
+        <p>University</p>
+        <input class="updated-univercity" type="text">
+      </div>
+     </div>
+     <div><button class="save-edit-detail">Save</button></div>
+    </div>
+
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="./deshbord.html" class="logo">
+          <img src="../images/logo3.jpg"
+        /></a>
+        <div class="search-box">
+          <img src="../images/search.png" alt="" />
+          <input type="text" placeholder="search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="../images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="../deshbord/network.html"
+              ><img src="../images/network.png" /><span>My Newtwork</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="../images/jobs.png" /><span>Queries</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../images/message.png" /><span>Messagings</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../images/notification.png" /><span
+                >Notification</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="../images/WhatsApp Image 2024-04-26 at 07.32.30_51d6af34.jpg" class="nav-profile-img" />
+        </div>
+      </div>
+    </nav>
+
+    <!--nav bar closed-->
+
+    <div class="container" >
+      <!-- ------------left-sidebar---------- -->
+      <div class="left-sidebar" style="">
+        <div class="sidebar-profile-box">
+          <img class="cover-img" src="../images/cover-pic.png" width="100%" />
+          <div class="sidebar-profile-info">
+            <img id="profile-pic" src="../images/WhatsApp Image 2024-04-26 at 07.32.30_51d6af34.jpg" />
+            <!-- <label for="input-file"><i class="bx bx-plus"></i></label> -->
+            <span class="edit-profile">Edit Profile <i class='bx bxs-edit' ></i></span>
+            <h1 class="user-name">Bappi das</h1>
+            <p>Assam Downtown University</p>
+            <ul>
+              <li>Your profile views <span>2002</span></li>
+              <li>Your post views <span>1230</span></li>
+              <li>Your connections <span>500+</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href=""> <img src="../images/items.png" alt="" />My items</a>
+            <a href=""><img src="../images/premium.png" alt="" />Try Premium</a>
+          </div>
+        </div>
+        <div class="edit-new-profile">
+         <div class="uplode-new-profile-img">
+          
+         </div>
+        </div>
+
+        <div class="sidebar-activity">
+          <h3>RECENT</h3>
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Web Development</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Projects on ICSAGI</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />UI and UX Desingner</a
+          >
+          <a href=""
+            ><img src="../images/recent.png" alt="" />Hackathon Winner 2024</a
+          >
+          <h3>EXPERIENCE</h3>
+          <a href=""></a>
+          <h3>EDUCATION</h3>
+        </div>
+      </div>
+      <!-- ----------main-content------------ -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="../images/WhatsApp Image 2024-04-26 at 07.32.30_51d6af34.jpg" />
+            <textarea
+              placeholder="Write a post"
+              rows="2"
+              id="post-text"
+            ></textarea>
+            <img src="" alt="" class="preview-image hide" />
+          </div>
+          <div class="create-post-links">
+            <li>
+              <img src="../images/photo.png" alt="" />
+              <button id="photo-button" style="all: unset" onclick="">
+                Photo
+              </button>
+            </li>
+            <li><img src="/images/video.png" alt="" />Video</li>
+            <li><img src="/images/event.png" alt="" />Event</li>
+            <li onclick="post_view();">Post</li>
+            <input
+              onchange="imageSelect()"
+              id="photo-uploader"
+              type="file"
+              multiple="false"
+              style="position: absolute; left: -1000px"
+            />
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by:<span
+              >top <img src="../images/down-arrow.png" alt=""
+            /></span>
+          </p>
+        </div>
+        <div class="post-view" id="ost-view">
+          <div class="post">
+            <div class="header">
+              <div class="profile-pic">
+                <img src="../images/user-3.png" />
+              </div>
+              <div class="user-info">
+                <h3>Jorrit Sandbrink</h3>
+              </div>
+              <button class="follow-btn">+ Follow</button>
+            </div>
+            <div class="content">
+              <p>ok bhai ok</p>
+            </div>
+            <div class="stats">
+              <span class="reactions">62</span>
+              <span class="comments">78 comments &bullet; 1 repost</span>
+            </div>
+            <div class="actions">
+              <button class="action-btn">
+                <img class="user-like" src="../images/like.png" onclick="accept_like(this);" /> Like
+              </button>
+              <button class="action-btn">
+                <img src="../images/comment.png" /> Comment
+              </button>
+              <button class="action-btn">
+                <img src="../images/event.png" /> Repost
+              </button>
+              <button class="action-btn">
+                <img src="../images/send.png" /> Send
+              </button>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="header">
+              <div class="profile-pic">
+                <img src="../images/user-3.png" />
+              </div>
+              <div class="user-info">
+                <h3>Jorrit Sandbrink</h3>
+              </div>
+              <button class="follow-btn">+ Follow</button>
+            </div>
+
+            <div class="content">
+              <p>
+                ChatGPT is a free-to-use AI system. Use it for engaging
+                conversations, gain insights, automate tasks, and witness the
+                future of AI, all in one place.
+              </p>
+              <img src="../images/post-image-1.png" />
+            </div>
+
+            <div class="stats">
+              <span class="reactions">62</span>
+              <span class="comments">78 comments &bullet; 1 repost</span>
+            </div>
+
+            <div class="actions">
+              <button class="action-btn">
+                <img class="user-like" src="../images/like.png" onclick="accept_like(this);" /> Like
+              </button>
+              <button class="action-btn">
+                <img src="../images/comment.png" /> Comment
+              </button>
+              <button class="action-btn">
+                <img src="../images/event.png" /> Repost
+              </button>
+              <button class="action-btn">
+                <img src="../images/send.png" /> Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------right-sidebar---------- -->
+      <div class="right-sidebar"></div>
+    </div>
+
+
+
+  
+    <script src="./deshbord.js"></script>
+  </body>
+</html>
